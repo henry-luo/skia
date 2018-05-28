@@ -89,15 +89,15 @@ set(skia_sources
     src/codec/SkCodecImageGenerator.cpp
     src/codec/SkGifCodec.cpp
     src/codec/SkIcoCodec.cpp
-    src/codec/SkJpegCodec.cpp
-    src/codec/SkJpegDecoderMgr.cpp
-    src/codec/SkJpegUtility.cpp
+  # src/codec/SkJpegCodec.cpp
+  # src/codec/SkJpegDecoderMgr.cpp
+  # src/codec/SkJpegUtility.cpp
     src/codec/SkMasks.cpp
     src/codec/SkMaskSwizzler.cpp
     src/codec/SkPngCodec.cpp
   # src/codec/SkRawAdapterCodec.cpp
   # src/codec/SkRawCodec.cpp
-    src/codec/SkSampledCodec.cpp
+  # src/codec/SkSampledCodec.cpp
     src/codec/SkSampler.cpp
     src/codec/SkStreamBuffer.cpp
     src/codec/SkSwizzler.cpp
@@ -164,7 +164,7 @@ set(skia_sources
     src/core/SkDeviceProfile.cpp
     src/core/SkDistanceFieldGen.cpp
     src/core/SkDither.cpp
-    src/core/SkDocument.cpp
+  # src/core/SkDocument.cpp
     src/core/SkDraw.cpp
     src/core/SkDrawable.cpp
     src/core/SkDrawLooper.cpp
@@ -580,8 +580,8 @@ set(skia_sources
     src/image/SkSurface_Raster.cpp
 
     src/images/SkImageEncoder.cpp
-    src/images/SkJPEGImageEncoder.cpp
-    src/images/SkJPEGWriteUtility.cpp
+  # src/images/SkJPEGImageEncoder.cpp
+  # src/images/SkJPEGWriteUtility.cpp
     src/images/SkPNGImageEncoder.cpp
 
     src/jumper/SkJumper.cpp
@@ -622,25 +622,25 @@ set(skia_sources
     src/pathops/SkPathWriter.cpp
     src/pathops/SkReduceOrder.cpp
 
-    src/pdf/SkDeflate.cpp
-    src/pdf/SkJpegInfo.cpp
-    src/pdf/SkPDFBitmap.cpp
-    src/pdf/SkPDFCanon.cpp
-    src/pdf/SkPDFCanvas.cpp
-    src/pdf/SkPDFConvertType1FontStream.cpp
-    src/pdf/SkPDFDevice.cpp
-    src/pdf/SkPDFDocument.cpp
+  # src/pdf/SkDeflate.cpp
+  # src/pdf/SkJpegInfo.cpp
+  #  src/pdf/SkPDFBitmap.cpp
+  #  src/pdf/SkPDFCanon.cpp
+  #  src/pdf/SkPDFCanvas.cpp
+  #  src/pdf/SkPDFConvertType1FontStream.cpp
+  #  src/pdf/SkPDFDevice.cpp
+  #  src/pdf/SkPDFDocument.cpp
   # src/pdf/SKDocument_PDF_None.cpp
-    src/pdf/SkPDFFont.cpp
-    src/pdf/SkPDFFormXObject.cpp
-    src/pdf/SkPDFGraphicState.cpp
-    src/pdf/SkPDFMakeCIDGlyphWidthsArray.cpp
-    src/pdf/SkPDFMakeToUnicodeCmap.cpp
-    src/pdf/SkPDFMetadata.cpp
-    src/pdf/SkPDFResourceDict.cpp
-    src/pdf/SkPDFShader.cpp
-    src/pdf/SkPDFTypes.cpp
-    src/pdf/SkPDFUtils.cpp
+  #  src/pdf/SkPDFFont.cpp
+  #  src/pdf/SkPDFFormXObject.cpp
+  #  src/pdf/SkPDFGraphicState.cpp
+  #  src/pdf/SkPDFMakeCIDGlyphWidthsArray.cpp
+  #  src/pdf/SkPDFMakeToUnicodeCmap.cpp
+  #  src/pdf/SkPDFMetadata.cpp
+  #  src/pdf/SkPDFResourceDict.cpp
+  #  src/pdf/SkPDFShader.cpp
+  #  src/pdf/SkPDFTypes.cpp
+  #  src/pdf/SkPDFUtils.cpp
 
     src/pipe/SkPipeCanvas.cpp
     src/pipe/SkPipeReader.cpp
@@ -653,8 +653,8 @@ set(skia_sources
   # src/ports/SkFontConfigInterface_direct_google3_factory.cpp
   # src/ports/SkFontHost_FreeType.cpp
   # src/ports/SkFontHost_FreeType_common.cpp
-    src/ports/SkFontMgr_custom.cpp
-    src/ports/SkFontMgr_custom_directory.cpp
+  # src/ports/SkFontMgr_custom.cpp
+  # src/ports/SkFontMgr_custom_directory.cpp
   # src/ports/SkFontMgr_custom_directory_factory.cpp
   # src/ports/SkFontMgr_custom_embedded_factory.cpp
   # src/ports/SkFontMgr_custom_empty_factory.cpp
@@ -692,8 +692,8 @@ set(skia_sources
     src/sksl/SkSLSPIRVCodeGenerator.cpp
     src/sksl/SkSLUtil.cpp
 
-    src/svg/SkSVGCanvas.cpp
-    src/svg/SkSVGDevice.cpp
+  # src/svg/SkSVGCanvas.cpp
+  # src/svg/SkSVGDevice.cpp
 
     src/utils/SkBase64.cpp
     src/utils/SkBitmapSourceDeserializer.cpp
@@ -710,8 +710,8 @@ set(skia_sources
     src/utils/SkInterpolator.cpp
     src/utils/SkMatrix22.cpp
     src/utils/SkMeshUtils.cpp
-    src/utils/SkMultiPictureDocument.cpp
-    src/utils/SkMultiPictureDocumentReader.cpp
+  # src/utils/SkMultiPictureDocument.cpp
+  # src/utils/SkMultiPictureDocumentReader.cpp
     src/utils/SkNullCanvas.cpp
     src/utils/SkNWayCanvas.cpp
     src/utils/SkOSPath.cpp
@@ -727,12 +727,23 @@ set(skia_sources
     src/utils/SkTextBox.cpp
     src/utils/SkWhitelistTypefaces.cpp
 
-    src/xml/SkDOM.cpp
-    src/xml/SkXMLParser.cpp
-    src/xml/SkXMLWriter.cpp
+  # src/xml/SkDOM.cpp
+  # src/xml/SkXMLParser.cpp
+  # src/xml/SkXMLWriter.cpp
 
+  # src/views/SkEvent.cpp
+  # src/views/SkEventSink.cpp
+  # src/views/SkTagList.cpp
+  # src/views/SkView.cpp
+  # src/views/SkViewPriv.cpp
+  # src/views/SkWindow.cpp
+  # src/views/SkOSMenu.cpp
+  
+    src/c/sk_effects.cpp
+	src/c/sk_paint.cpp
+	src/c/sk_surface.cpp
+	
     third_party/etc1/etc1.cpp
-
     third_party/gif/SkGifImageReader.cpp
     )
 
@@ -822,7 +833,7 @@ if(WIN32)
               src/utils/win/SkDWriteGeometrySink.cpp
               src/utils/win/SkHRESULT.cpp
               src/utils/win/SkIStream.cpp
-              src/utils/win/SkWGL_win.cpp
+            # src/utils/win/SkWGL_win.cpp
               )
 endif()
 if(UNIX)
@@ -926,8 +937,9 @@ elseif(SKIA_STATIC)
 endif()
 target_compile_definitions(skia PRIVATE SKIA_IMPLEMENTATION=1)
 target_compile_definitions(skia PUBLIC $<$<CONFIG:Debug>:SK_DEBUG>)
+# add_definitions(-DPNG_USE_DLL)
 target_link_libraries(skia PUBLIC ${OTHER_LIBRARIES}
-                                  png expat zlib gif jpeg-turbo
+                                  png # expat zlib gif jpeg-turbo
                                   $<$<NOT:$<PLATFORM_ID:Windows>>:-ldl>)
 if(WIN32)
   target_link_libraries(skia PUBLIC usp10)
@@ -953,9 +965,12 @@ target_include_directories(skia SYSTEM
                                src/sksl
                                src/utils
                                src/utils/win
+							   # src/views
                                src/xml
+							   src/c
                                third_party/etc1
                                third_party/gif
+							   # third_party/libpng
                              PUBLIC
                                include/codec
                                include/core
@@ -969,6 +984,8 @@ target_include_directories(skia SYSTEM
                                include/ports
                                include/svg
                                include/utils
+							   include/c
+							   # include/views
                                )
 
 ## tests
@@ -986,7 +1003,6 @@ target_include_directories(skia SYSTEM
 ##  add_test(${test_dir}/${test_name} ${CMAKE_COMMAND} -E remove ${test_dir}/${test_name}${CMAKE_EXECUTABLE_SUFFIX}
 ##                                 && ${CMAKE_COMMAND} --build --target ${test_name})
 ##                                 && ${CMAKE_CURRENT_LIST_DIR}/${test_dir}/${test_name}${CMAKE_EXECUTABLE_SUFFIX})
-
 #endfunction()
 
 #enable_testing()
