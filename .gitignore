@@ -40,3 +40,4 @@ tools/clang
 third_party/llvm-build
 bin/gn
 bin/gn.exe
+/csample/.vs

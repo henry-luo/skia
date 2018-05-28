@@ -942,6 +942,10 @@ target_link_libraries(skia PUBLIC ${OTHER_LIBRARIES}
                                   png # expat zlib gif jpeg-turbo
                                   $<$<NOT:$<PLATFORM_ID:Windows>>:-ldl>)
 if(WIN32)
+  link_directories(third_party/libpng1.6/x86)
+endif()
+
+if(WIN32)
   target_link_libraries(skia PUBLIC usp10)
 elseif(UNIX)
   target_link_libraries(skia PUBLIC ${FREETYPE_LIBRARIES} fontconfig)
@@ -971,6 +975,7 @@ target_include_directories(skia SYSTEM
                                third_party/etc1
                                third_party/gif
 							   # third_party/libpng
+							   third_party/libpng1.6
                              PUBLIC
                                include/codec
                                include/core
