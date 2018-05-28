@@ -42,3 +42,5 @@ bin/gn
 bin/gn.exe
 /csample/.vs
 /csample/Debug
+/build64/.vs
+/build64

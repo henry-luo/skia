@@ -584,8 +584,8 @@ set(skia_sources
   # src/images/SkJPEGWriteUtility.cpp
     src/images/SkPNGImageEncoder.cpp
 
-    src/jumper/SkJumper.cpp
-    src/jumper/SkJumper_stages.cpp
+  # src/jumper/SkJumper.cpp
+  # src/jumper/SkJumper_stages.cpp
 
     src/lazy/SkDiscardableMemoryPool.cpp
 
