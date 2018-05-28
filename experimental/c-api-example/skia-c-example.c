@@ -13,6 +13,8 @@
 #include "sk_paint.h"
 #include "sk_path.h"
 
+#pragma warning(disable:4996)
+
 static sk_surface_t* make_surface(int32_t w, int32_t h) {
     sk_imageinfo_t info;
     info.width = w;
